@@ -24,7 +24,7 @@ export function SzallasSingle(props) {
             setPending(false);
             navigate("/");
         });
-    }, [id]);
+    }, [id, navigate]);
     if(isPending ||!szallas.id) {
 
         return (

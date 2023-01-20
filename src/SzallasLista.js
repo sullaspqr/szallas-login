@@ -21,7 +21,7 @@ export function SzallasLista() {
             setPending(false);
             navigate("/");
         });
-    },[]);
+    },[navigate]);
     if(isPending || !szallasok.length) {
         return (
             <div className="center-item">
@@ -34,7 +34,7 @@ export function SzallasLista() {
         <div>
         <Kijelentkezes />
         <ul className="list-group w-100">
-            <div clasName="row boarder-bottom p-2 text-dark">
+            <div className="row border-bottom p-2 text-dark">
                 <div className="col-xs-12 col-sm-4">
                     <h5 className="visible-xs">Megnevezés</h5>
                 </div>
@@ -44,7 +44,7 @@ export function SzallasLista() {
             </div>
             {szallasok.map((szallas) => (
                 <NavLink key={szallas.id} to={"/szallas/" + szallas.id}>
-                     <div clasName="row boarder-bottom p-2 text-dark">
+                     <div className="row border-bottom p-2 text-dark">
                      <div className="col-xs-12 col-sm-4">
                      <h4 className="visible-xs">{szallas.name}</h4>
                      <span className="hidden-xs">{szallas.host_name}</span>
