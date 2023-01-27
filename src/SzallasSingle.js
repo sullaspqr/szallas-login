@@ -14,7 +14,7 @@ export function SzallasSingle(props) {
     useEffect(() => {
         setPending(true);
         fetchHitelesitessel
-        .get("https://kodbazis.hu/api/szallasok" + id)
+        .get("https://kodbazis.hu/api/szallasok/" + id)
         .then ((res) => res.data)
         .then((tartalom) => {
             setSzallas(tartalom);
