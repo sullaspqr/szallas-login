@@ -53,7 +53,7 @@ export function SzallasLista() {
                         {szallas.neightbourhood} {szallas.neightbourhood_group}
                      </div>
                      <div className="col-xs-8 col-sm-3">{szallas.minimum_nights}</div>
-                <div className="col-xs-10 col-sm-2">{szallas.price}</div>
+                <div className="col-xs-10 col-sm-2">{szallas.price} €</div>
                      </div>
                 </NavLink>
             ))}
