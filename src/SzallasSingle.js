@@ -39,6 +39,7 @@ export function SzallasSingle(props) {
             <h3>{szallas.host_name}</h3>
             <h3>{szallas.neighbourhood} {szallas.neighbourhood_group}</h3>
             <h3>{szallas.minimum_nights}</h3>
+            <h3>{szallas.price} €</h3>
             <Kijelentkezes />
         </div>
     );
