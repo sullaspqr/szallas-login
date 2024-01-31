@@ -50,7 +50,7 @@ export function SzallasLista() {
                      <span className="hidden-xs">{szallas.host_name}</span>
                      </div>
                      <div className="col-xs-4 col-sm-2 right">
-                        {szallas.neightbourhood} {szallas.neightbourhood_group}
+                        {szallas.neighbourhood} {szallas.neighbourhood_group}
                      </div>
                      <div className="col-xs-8 col-sm-3">{szallas.minimum_nights}</div>
                 <div className="col-xs-10 col-sm-2">{szallas.price} €</div>
